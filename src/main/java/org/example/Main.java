@@ -5,7 +5,13 @@ public class Main {
         System.out.println("Begin");
 
 
+        Greeting gm = new Greeting() {
+            @Override
+            public void hello(String name) {
+                System.out.println("Hello " + name);
+            }
+        };
 
-
+        gm.hello("Bob");
     }
 }
