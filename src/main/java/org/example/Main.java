@@ -22,14 +22,21 @@ public class Main {
         Printer prt = () -> System.out.println("Message");
         prt.printOut();
 
-Printer mrt = ()-> System.out.println("Next");
-Printer crt = new Printer() {
-    @Override
-    public void printOut() {
-        System.out.println("Crt Message");
-    }
-};
-
+        Printer mrt = () -> System.out.println("Next");
+        Printer crt = new Printer() {
+            @Override
+            public void printOut() {
+                System.out.println("Crt Message");
+            }
+        };
+        Printer mre = () -> System.out.println("Priceless");
+        mre.printOut();
+        Printer opn = new Printer() {
+            @Override
+            public void printOut() {
+                System.out.println("Fubar");
+            }
+        };
     }
 
 }
