@@ -39,11 +39,11 @@ public class Main {
                 System.out.println("Fubar");
             }
         };
-
+        opn.printOut();
         //------------------------------For Next ---------------------------
 
-        for (int i = 0; i <10 ; i++) {
-            System.out.println("Number "+ i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Number " + i);
             System.out.println("Next");
         }
         System.out.println("\n\n\nNow streamed \n");
@@ -54,7 +54,6 @@ public class Main {
             System.out.println("Next");
         });
     }
-
 
 
 }
