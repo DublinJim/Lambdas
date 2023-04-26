@@ -13,5 +13,21 @@ public class Main {
         };
 
         gm.hello("Bob");
+
+        Greeting gm2 = name -> {
+            System.out.println(name);
+        };
+        gm2.hello("Betty");
+
+   Printer prt = new Printer() {
+       @Override
+       public void printOut() {
+           System.out.println("Message");
+       }
+   };
+        prt.printOut();
+
     }
+
 }
+
