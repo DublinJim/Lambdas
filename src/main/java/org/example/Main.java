@@ -19,13 +19,16 @@ public class Main {
         };
         gm2.hello("Betty");
 
-   Printer prt = new Printer() {
-       @Override
-       public void printOut() {
-           System.out.println("Message");
-       }
-   };
+        Printer prt = () -> System.out.println("Message");
         prt.printOut();
+
+Printer mrt = ()-> System.out.println("Next");
+Printer crt = new Printer() {
+    @Override
+    public void printOut() {
+        System.out.println("Crt Message");
+    }
+};
 
     }
 
