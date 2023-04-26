@@ -14,9 +14,7 @@ public class Main {
 
         gm.hello("Bob");
 
-        Greeting gm2 = name -> {
-            System.out.println(name);
-        };
+        Greeting gm2 = x -> System.out.println(x);
         gm2.hello("Betty");
 
         Printer prt = () -> System.out.println("Message");
@@ -31,13 +29,30 @@ public class Main {
         };
         Printer mre = () -> System.out.println("Priceless");
         mre.printOut();
+        crt.printOut();
+        mrt.printOut();
         Printer opn = new Printer() {
             @Override
             public void printOut() {
                 System.out.println("Fubar");
             }
         };
+
+        //------------------------------For Next ---------------------------
+
+        for (int i = 0; i <10 ; i++) {
+            System.out.println("Number "+ i);
+        }
+
+        //lamba version
+
+        for (int i = 0; i <10 ; i++) {
+            System.out.println("Number "+i);
+            System.out.println("Next");
+        }
     }
+
+
 
 }
 
