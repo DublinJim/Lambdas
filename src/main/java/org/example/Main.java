@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.stream.IntStream;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Begin");
@@ -42,14 +44,15 @@ public class Main {
 
         for (int i = 0; i <10 ; i++) {
             System.out.println("Number "+ i);
-        }
-
-        //lamba version
-
-        for (int i = 0; i <10 ; i++) {
-            System.out.println("Number "+i);
             System.out.println("Next");
         }
+        System.out.println("\n\n\nNow streamed \n");
+        //Stream version
+
+        IntStream.range(0, 10).forEach(i -> {
+            System.out.println("Number " + i);
+            System.out.println("Next");
+        });
     }
 
 
